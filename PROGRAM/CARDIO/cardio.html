@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 340px; /* Should be removed. Only for demonstration */
+    margin-bottom:10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("BG.png");
+  background-size: 1300px 1300px;
+}
+
+.flip-box-inner {
+  position: relative;
+  margin-left: 10px; 
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-box-inner:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 280px;
+  height: 340px;
+  backface-visibility: hidden;
+}
+
+.flip-box-back{
+
+  background-color:#4834d4;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  line-height: 20px;
+}
+
+</style>
+</head>
+<body>
+
+  <link href="../../bar/cssbar.css" rel="stylesheet" type="text/css">
+  
+    <div id="navbar">
+        <a href="home.html" id="logo">FITERZISE</a>
+    <div id="navbar-center">
+        <a href="program.html" class="active">PROGRAMS</a>
+        <a href="create.html">CREATE</a>
+        <a href="about.html">ABOUT US</a>
+    <div id="navbar-right">
+        <button type="submit" name="signup" onclick='location.replace("registeration page.html")'>SIGN UP</button>
+        <button onclick="document.getElementById('Login').style.display='block'" class="flogin">LOG IN</button>
+    </div>
+    </div>
+    </div>
+
+<h1 style="margin-top: 80px;  text-align: center; font-weight: bold; font-size: 80px;">Cardio</h1>
+
+<div class="row"> <!--row1-->
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Aladding Workout</h3>
+      <img src="aladdin.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; font-weight: bold;">Aladding Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">If you want to be an adventurer of the mystical East you need to have great fascial fitness, overall strength, agility and muscle stability. Aladdin is a workout that puts you through your paces helping you develop all that as well as a good aerobic basis and good endurance levels. Add EC and it becomes a real challenge.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Firestorm Workout</h3>
+      <img src="firestorm.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; font-weight: bold;">Firestorm Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Sometimes you need to rely on who you are and what you have. For that to work when you need it you need to dig deep inside yourself and work hard to build yourself up. Training is a journey not a destination and the Firestorm workout is a path you need to travel and you will be transformed.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Sinbad Workout</h3>
+      <img src="sinbad.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; font-weight: bold;">Sinbad Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Sinbad, as you'd expect, is a total body workout that uses all the muscles you have until you feel you've run out of muscles to use. Physically it is not that difficult to do but it is hard as a combination done over seven sets with EC thrown in for good measure. there's a hint somewhere in all those words, for you. </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Body Mod Workout</h3>
+      <img src="Bodymod.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Body Mod Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">If you are looking for a full-body workout that will get you into the sweat zone fast and help you build up speed, endurance and overall body strength then Body Mod is exactly what you need. Bring your knees to waist height when doing both March Steps and High Knees, go for height on Jump Squats and reduce rest between sets to EC levels and what you have is a powerful weapon you can use to unlock the potential of your own physical abilities. </p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+<div class="row"><!--row2-->
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Hell Diver Workout</h3>
+      <img src="helldiver.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Hell Diver Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 11px;">Hell Diver is a high intensity workout that will raise your body temperature and get you into the sweat zone from the very first set. Bring your knees up to your waist each time when performing High Knees and make sure you pump your arms as you run. Jump as high as you can in Basic Burpees, going for height and the extra load on your quads. If you really want to feel yourself gasp for air dare to go for Extra Credit, forcing your muscles to recover on the fly and putting that extra load on your lungs for a really high VO2 Max burn.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>Size Down Workout</h3>
+      <img src="sizedown.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Size Down Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 11px;">When everyone tries to size up but sizing down takes as much effort and science. When the body's musculature is loaded sufficiently for an adaptive response to kick in, muscles that are superfluous or too energy-intensive to carry are slimmed down. That includes burning carbohydrates and excess fat. Size Down is the workout for you then. The results are a lithe, dynamic physique and a more energy-efficient bioenergetic machine, well body really. </p>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+ <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Breathless Workout</h3>
+      <img src="breathless.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Breathless Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Breathless is the kind of workout you can adjust to stretch your athletic ability irrespective of your level of fitness. Go high on your jump squats and bring your knees to 90 degrees every time you do High Knees and try to get as high as possible with each of your jumping lunges and what you end up with is a kind of moving target that recedes in the horizon the fitter you get. Add EC and that horizon gets a tad further away, but that's just what keeps you coming back to this one. </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>Lifeguard Workout</h3>
+      <img src="lifeguard.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Lifeguard Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Lifeguard is a high-burn, large-muscle group program that demands you move your body fast. Its successive load of the muscles demands an ever-growing oxygen consumption that makes the lungs work hard challenging VO2 Max capacity. This makes it perfect for those days when you need a workout that will make you feel like you've really pushed your body through one more performance barrier. </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row"><!--row3-->
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Stardust-workout</h3>
+      <img src="stardust.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Stardust-workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">The Stardust workout uses your body like a spring, coiling it and uncoiling it, bouncing it around and making it jump. Its big, fast moves and the intensity of core work coupled with muscle tension are guaranteed to have you in the sweat zone in no time at all. This is a perfect workout for the days when you really want to let your body loose and want to workup some sweat.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>Cardio Combat Workout</h3>
+      <img src="combat.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Cardio Combat Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Combat and cardio were made for each other which is why Cardio Combat pushes all the skeletal muscle fast-response buttons, overloads your respiratory system and screams for you to do it with EC straight up, no debates. It's a high burn workout. It will streamline your muscles and you will feel the difference.  </p>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+ <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Master Plan Workout</h3>
+      <img src="master.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Master Plan Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Your master plan to achieve a good level of fitness had better include the Master Plan workout. Created as a high burn fitness routine that uses large muscle groups in fast, explosive movements, Master plan is a workout you need to come back to every time you're bridging a gap in your fitness training or are thinking of getting ready for the next quantum leap in fitness performance.  </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>Heist Workout</h3>
+      <img src="heist.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Heist Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Some workouts are chosen and some workouts choose you. If you're doing The Heist workout you will see what that means. There is an overlap between anaerobic and aerobic work, concentric and eccentric muscle movement and isometric core work when you're already tired. Of course you know what you need for Heist, right? Great speed, splendid reactions, stamina, strength, focus, a little aerobic capacity and excellent recovery time. Get in. Get Out. What can possibly go wrong? </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row"><!--row4-->
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Catch Them All Workout</h3>
+      <img src="catch.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Catch Them All Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Catch' Em All is a fun workout that takes your body through a journey of discovery of capabilities and muscle movements. Dynamic movements recruit a large number of muscle groups so that as you go from one set exercise to the next no part of your body ever gets a real break. This is great for developing fascial fitness, plus the kind of focused, streamlined look a high-burn workout develops.  </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>Power Cardio Workout</h3>
+      <img src="power.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Power Cardio Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Power Cardio uses large muscle groups to load the lungs, push the VO2 Max and raise the pulse rate for a truly high-burn session that works most of the body. Raise your knees to waist height during High Knees, keep your body perfectly straight during push ups and Plank Crunches and EC for that extra level of difficulty and you will know it when you're done.</p>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+ <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Top Of The World Workout</h3>
+      <img src="topworld.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Top Of The World Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Top of the World is how you'll feel after you've completed the Top Of The World workout, not just because it's a challenge, which it is, but because its fast-paced exercises will leave you feeling with a buzz that's hard to top. This is a total body workout that will get you sweating fast and then will keep you in that state until you finish.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>Ender Workout</h3>
+      <img src="ender.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Ender Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Ender is a full body workout that uses a series of standard exercises to challenge specific muscle groups and deliver a near total-body training experience. If you are into body sculpting. If it's important to you to have control of your body and feel its strength and power then Ender will deliver just what you need.  </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row"><!--row5-->
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Reboot Workout</h3>
+      <img src="reboot.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Reboot Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Reboot your body, mind and spirit with the Reboot workout designed to get you moving, your arms and legs pumping and your heart thumping. If that sounds like a lot of hard work it is because it is exactly that. The alternating fast/slow tempo segments work the muscles both ballistically and isometrically, forcing your body to work even when it should be resting which means the muscles are truly tested. Dive in and feel the benefits.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>True Alpha Workout</h3>
+      <img src="alpha.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">True Alpha Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">There are a few things you want a True Alpha workout to have: core work, upper body strength, lower body explosion, balance and a bit of an aerobic push. The True Alpha workout has all that and more, especially if you do it at Level III where endurance also comes into play.</p>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+ <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>Falcon Workout</h3>
+      <img src="falcon.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Falcon Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Fly high and burn fast with the Falcon workout. Not only is this a routine designed to help your fascial fitness improve but it will also help your body streamline itself, muscles will coordinate as they are put under pressure and you will have to recruit many supporting muscle groups to maintain the intensity. Do everything balancing on the balls of your feet, apply EC and you have a workout that will also test your VO2 Max. </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>Shakeup Workout</h3>
+      <img src="shakeup.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">Shakeup Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Shake-Up is just a difficulty Level III workout but as a fascial fitness challenge that also works hip tendons, both front and side, it is unparalleled. Stay on the balls of your feet while doing Jumping Jacks and bring your hands down fast, by your side, and try and max out the reps each time. Add EC and you have a VO2 Max challenge on top of everything else. </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+ <!--PopUp-->
+    <div id="Login" class="modal">
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+        <p> LOG IN </p>
+      <span onclick="document.getElementById('Login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>-->
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <br><br>
+
+      <label for="pasw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit" class="login">Login</button>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('Login');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

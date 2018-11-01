@@ -15,7 +15,6 @@ WEIGHT <input type="text" name="weight" style="border-radius: 4px;"><br><br>
 HEIGHT <input type="text" name="height" style="border-radius: 4px;"><br><br>
 AGE <input type="text" name="age" style="border-radius: 4px;"><br><br><br>
 </div>
-
 <div class="right">
 	USER ID <input type="text" name="username" style="border-radius: 4px;">
 	<br><br><br>
@@ -24,7 +23,6 @@ AGE <input type="text" name="age" style="border-radius: 4px;"><br><br><br>
 	SEX <input type="radio" name="sex" value="male"><label>MALE</label> 
 		<input type="radio" name="sex" value="female"><label>FEMALE</label>
 	</div>
-
 <input type="submit" name="nextPage" class="next" value="NEXT>>" 
 	style="	
 	font-size: 25px;
@@ -38,7 +36,6 @@ AGE <input type="text" name="age" style="border-radius: 4px;"><br><br><br>
 	border: none;
   	cursor: pointer;"> 	
  </input>
-
 <br><br><br>
 
 </form>

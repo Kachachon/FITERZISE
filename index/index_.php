@@ -11,6 +11,12 @@
         YOURSELF<br>
     </div>
     <div id="lower">
+        <?php
+            if(isset($_SESSION['u_ID']))
+            {
+                echo "You Are LogIn";
+            }
+        ?>
         CREATE<br>
         YOUR<br>
         OWN<br>
