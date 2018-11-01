@@ -31,19 +31,9 @@ h1{
     font-weight: bold;
 }
 
-.next{
-	margin-left: 1100px;
-	background-color:#4834d4;
-	color:white;
-	padding:13px;
-	border-radius: 8px;
-	font-weight: bold;
-	border: none;
-  cursor: pointer;
-}
+.next input:hover {
+    background-color: #4834d4;
 
-.next:hover {
-    opacity: 0.8;
 }
 #navbar {
   overflow: hidden;
