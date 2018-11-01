@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <link href="home.css" rel="stylesheet" type="text/css">
+    <div id="navbar">
+        <a href="#default" id="logo">FITERZISE</a>
+    <div id="navbar-center">
+        <a href="#program" class="active">PROGRAMS</a>
+        <a href="#create">CREATE</a>
+        <a href="#about">ABOUT US</a>
+    <div id="navbar-right">
+        <button type="submit" name="signup" onclick='location.replace("registeration page.html")'>SIGN UP</button>
+        <button onclick="document.getElementById('Login').style.display='block'" class="flogin">LOG IN</button>
+        <!--
+        <a href="#signup">SIGN UP</a>
+        <a href="#login">LOG IN</a>-->
+    </div>
+    </div>
+    </div>
+
+
+    <img src="Larm.png" alt="Rarm" id="Larm">
+    <img src="Rarm.png" alt="Larm" id="Rarm">
+    <div id="upper">
+        CHALLENGE<br>
+        YOURSELF<br>
+    </div>
+    <div id="lower">
+        CREATE<br>
+        YOUR<br>
+        OWN<br>
+        PROGRAM
+    </div>
+    <div>
+    <button type="submit" name="create" id="btcreate">CREATE</button>
+     <!--PopUp-->
+    <div id="Login" class="modal">
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+        <p> LOG IN </p>
+      <span onclick="document.getElementById('Login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>-->
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <br><br>
+
+      <label for="pasw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit" class="login">Login</button>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('Login');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+</body>
+</html>
