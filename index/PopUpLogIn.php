@@ -1,11 +1,12 @@
+
   <div id="Login" class="modal">
-  <form class="modal-content animate">
+  <form class="modal-content animate" action="loginUser.php" method="POST" >
     <div class="imgcontainer">
         <p> LOG IN </p>
       <span onclick="document.getElementById('Login').style.display='none'" class="close" title="Close Modal">&times;</span>
       </div>
 
-    <div class="container" action="loginUser.php" method="POST">
+    <div class="container">
       <label for="username"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="username" required>
       <br><br>

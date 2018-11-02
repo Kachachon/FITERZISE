@@ -25,11 +25,11 @@ if (isset($_POST['nextPage']))
 			$sql = "SELECT * FROM user WHERE userID = '$username'";
 			$result = mysqli_query($conn, $sql);
 			$resultCheck= mysqli_num_rows($result);
-			if (! resultCheck > 0) {
+			if (! $resultCheck > 0) {
 				$hashPass = password_hash($password, PASSWORD_DEFAULT);
 				$sql = "INSERT INTO user (firstname,lastname,email,weight,height,age,sex,username,password) 
 				VALUES ('$firstname','$lastname','$email','$weight','$height',
-				'$age','$sex','$username','$password');";
+				'$age','$sex','$username','$hashPass');";
 				mysqli_query($conn, $sql);
 				header("Location: regis.php?regis=success");
 			}
