@@ -3,7 +3,6 @@
 if (isset($_POST['nextPage'])) 
 	{
 		include_once 'DBconnect.php';
-
 		$firstname = $_POST['Fname'];
 		$lastname = $_POST['Lname'];
 		$email = $_POST['email'];
@@ -13,7 +12,6 @@ if (isset($_POST['nextPage']))
 		$sex = $_POST['sex'];
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-
 		if (empty($firstname) || empty($lastname)|| empty($email)|| 
 			empty($weight)|| empty($height)|| empty($age)|| 
 			empty($sex)|| empty($username)|| empty($password))

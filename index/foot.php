@@ -1,12 +1,5 @@
-<?php  
-  session_start();
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>FITERZISE</title>
-</head>
-<header>
+
+<footer>
 	<link href="../bar/cssbar.css" rel="stylesheet" type="text/css">
 	<div id="navbar">
   	  <a href="index_.php" id="logo">FITERZISE.</a>
@@ -32,4 +25,5 @@
     	    </div>
 	     </div>
 	</div>
-</header>
+</footer>
+</html>

@@ -3,7 +3,7 @@
 ?>
 
 <body>	
-<link href="home.css" rel="stylesheet" type="text/css">
+<link href="../home/index_.css" rel="stylesheet" type="text/css">
     <img src="../home/Larm.png" alt="Rarm" id="Larm">
     <img src="../home/Rarm.png" alt="Larm" id="Rarm">
     <div id="upper">
@@ -12,19 +12,31 @@
     </div>
     <div id="lower">
         <?php
+            $br = "<br>";
             if(isset($_SESSION['u_ID']))
             {
-                echo "You Are LogIn";
+                echo "DO $br";
+                echo "YOUR $br";
+                echo "EXECISE $br";
+            }
+            else{
+                echo "CREATE $br";
+                echo "YOUR $br";
+                echo "PROGRAM $br";
             }
         ?>
-        CREATE<br>
-        YOUR<br>
-        OWN<br>
-        PROGRAM
     </div>
     <div>
-    <button type="submit" name="create" id="btcreate">CREATE</button>
-
+        <?php
+            $br = "<br>";
+            if(isset($_SESSION['u_ID']))
+            {
+                echo '<button type="submit" name="create" id="btcreate">WORK OUT!</button>';
+            }
+            else{
+                echo '<button type="submit" name="create" id="btcreate">CREATE</button>';
+            }
+        ?>
 <?php  
   include_once 'PopUpLogIn.php';
 ?>

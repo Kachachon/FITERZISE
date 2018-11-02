@@ -1,3 +1,12 @@
+@font-face {
+    font-family:LogoFont;
+    src: url(../FONT/LOGO.otf);
+}
+@font-face {
+    font-family:ButtonFont;
+    src: url(../FONT/couture.otf);
+}
+
 body {
   margin: 0;
 }
@@ -29,6 +38,7 @@ body {
 
 /* Style the logo */
 #navbar #logo {
+  font-family:LogoFont;
   font-size: 40px;
   font-weight: bold;
   transition: 0.4s;
@@ -49,6 +59,7 @@ body {
 
 /* Display some links to the center */
 #navbar-center {
+  font-family:ButtonFont;
   margin-left: 450px;
   float: center;
   font-weight: bold;
@@ -61,6 +72,7 @@ body {
 }
 
 #navbar-right button {
+  font-family:ButtonFont;
   background-color:#eb4d4b;
   color:white;
   margin: 10px; 
@@ -75,7 +87,7 @@ body {
     opacity: 0.8;
 }
 /*pop up SignIn*/
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email]  {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

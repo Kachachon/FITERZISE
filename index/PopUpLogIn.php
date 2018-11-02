@@ -13,6 +13,7 @@
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
       <button type="submit" name="SubmitLogin" class="login">Login</button>
+      <br><br>
     </div>
   </form>
 </div>
