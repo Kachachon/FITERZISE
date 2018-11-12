@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 340px; /* Should be removed. Only for demonstration */
+    margin-bottom:10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("BG.png");
+  background-size: 1300px 1300px;
+}
+
+.flip-box-inner {
+  position: relative;
+  margin-left: 10px; 
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-box-inner:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 280px;
+  height: 340px;
+  backface-visibility: hidden;
+}
+
+.flip-box-back{
+
+  background-color:#4834d4;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  line-height: 20px;
+}
+
+</style>
+</head>
+<body>
+
+  <link href="../../bar/cssbar.css" rel="stylesheet" type="text/css">
+  
+    <div id="navbar">
+        <a href="home.html" id="logo">FITERZISE</a>
+    <div id="navbar-center">
+        <a href="program.html" class="active">PROGRAMS</a>
+        <a href="create.html">CREATE</a>
+        <a href="about.html">ABOUT US</a>
+    <div id="navbar-right">
+        <button type="submit" name="signup" onclick='location.replace("registeration page.html")'>SIGN UP</button>
+        <button onclick="document.getElementById('Login').style.display='block'" class="flogin">LOG IN</button>
+    </div>
+    </div>
+    </div>
+
+<h1 style="margin-top: 80px;  text-align: center; font-weight: bold; font-size: 80px;">LOWER_BODY</h1>
+
+<div class="row"> <!--row1-->
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>LEG OF STEEL</h3>
+      <img src="LOWER_BODY/LEG OF STEEL/legs-of-steel-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; font-weight: bold;">LEG OF STEEL Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Your quads are the largest single muscle group in the body and your legs are needed to get you anywhere which is why the Legs of Steel workout will supercharge your quads and give you the kind of leg power that marks warriors from the rest.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>LEGDAY</h3>
+      <img src="LOWER_BODY/LEGDAY/legday-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; font-weight: bold;">LEGDAY Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Legs are what you need to use when you want to run (from zombies, werewolves and vampires, for example) and they’re also kinda useful in everyday life because we still walk to get to places. This is a workout to help you make them strong and capable of performing at will.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>MAXIMUS</h3>
+      <img src="LOWER_BODY/MAXIMUS/maximus-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; font-weight: bold;">MAXIMUS Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Get ready to command the Legions of the North by prepping yourself with the Maximus workout. Not only will your body feel ready for combat but should you find yourself in a field of dust, with the crowd around you, a gladius in one hand, do not be troubled, for you are now a Gladiator.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>P.S..S</h3>
+      <img src="LOWER_BODY/P.S..S/ps-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">P.S..S Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">PS is the workout you go to at the end of each of your training sessions. Designed to help stretch the muscles and strengthen some tendons it also delivers the kind of concentrated, lower body muscle tone work that you know is helping you get more from your body's strength and natural athleticism. Make this one of the constants in your after-workout routine and you will be surprised by the difference it will make to the way you move your body.  </p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+<div class="row"><!--row2-->
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>PRIMAL</h3>
+      <img src="LOWER_BODY/PRIMAL/primal-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">PRIMAL Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 11px;">Go native and let your body move with an atavistic sense of power and grace with our Primal workout. Whether you hop like a Kangaroo, or sting like a Scorpion there is an element of fun to the challenge that makes the workout addictive. So unleash the animals inside yourself. All of them. And feel the power flowing through your muscles.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>PROWLER</h3>
+      <img src="LOWER_BODY/PROWLER/prowler-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">PROWLER Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 11px;">The Prowler takes you to the floor and keeps you there while it focuses on lower body muscles and tendons so that you can develop the kind of serious muscle power that will amplify your every movement afterwards. This is a Level III workout but don't let that fool you, getting through all seven sets requires focus and determination and if you add EC it doesn't give you a lot of time to recover.  </p>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+ <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>QUADMAD</h3>
+      <img src="LOWER_BODY/QUADMAD/quad-mod-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">QUADMAD Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">The quads are the largest single muscle group in the body and Quad Mod is designed to help you sculpt them into powerful kick-ass powerful machines. A set of six exercises take you through every facet of quad training and give you the feeling that you are actually changing the way your leg muscles are structured.  </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>SLAMDUNK</h3>
+      <img src="LOWER_BODY/SLAMDUNK/slam-dunk-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">SLAMDUNK Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">If you're looking for the perfect way to add explosive power to your jumps and super-charge your quads and glutes the Slam Dunk workout will do the trick. This is a Level 3 strength workout so try pushing your performance to Level III in the number of sets and reduce rest time for EC. </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row"><!--row3-->
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>SPRINGBOARD</h3>
+      <img src="LOWER_BODY/SPRINGBOARD/springboard-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">SPRINGBOARD workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Springboard helps you work your quads, calves, glutes, lower tendons and abs and works hard to deliver fascial fitness. All of this are the foundation of building spring-like moves, greater endurance, improved athleticism and the kind of muscular control that transforms you entirely. Add EC to further challenge your VO2 Max and you've got yourself a workout that will take some time to master completely.  </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h3>VANGUARD</h3>
+      <img src="LOWER_BODY/VANGUARD/vanguard-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">VANGUARD Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">We need strong legs to do just about everything and stronger legs make us better at doing just about anything. Vanguard promises to help make your legs stronger. Six powerful routines combine to bring together the results you need in one targeted workout. Add EC and you also put to the test your VO2 Max. </p>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+ 
+
+
+
+ <!--PopUp-->
+    <div id="Login" class="modal">
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+        <p> LOG IN </p>
+      <span onclick="document.getElementById('Login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>-->
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <br><br>
+
+      <label for="pasw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit" class="login">Login</button>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('Login');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

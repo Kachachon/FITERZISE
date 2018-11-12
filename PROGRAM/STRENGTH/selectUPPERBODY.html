@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 340px; /* Should be removed. Only for demonstration */
+    margin-bottom:40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("BG.png");
+  background-size: 1300px 1300px;
+}
+
+.flip-box-inner {
+  position: relative;
+  margin-left: 10px; 
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-inner:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 280px;
+  height: 340px;
+  backface-visibility: hidden;
+}
+
+.flip-box-back{
+
+  background-color:#4834d4;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  line-height: 20px;
+}
+.foot button{
+  background-color:#eb4d4b;
+  color:white;
+  margin-left: 600px; 
+  padding:12px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+}
+
+.fot button:hover {
+    opacity: 0.8;
+}
+
+</style>
+</head>
+<body>
+
+  <link href="../../bar/cssbar.css" rel="stylesheet" type="text/css">
+  
+    <div id="navbar">
+        <a href="home.html" id="logo">FITERZISE</a>
+    <div id="navbar-center">
+        <a href="program.html" class="active">PROGRAMS</a>
+        <a href="create.html">CREATE</a>
+        <a href="about.html">ABOUT US</a>
+    <div id="navbar-right">
+    </div>
+    </div>
+    </div>
+
+
+<h1 style="margin-top: 80px;  text-align: center; font-weight: bold; font-size: 80px;">UPPER BODY Program</h1>
+<p style="font-size: 20px; text-align: center">Select 1 Upper Body Program</p>
+
+
+<form>
+<div class="row"> <!--row1-->
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="BABARIAN" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>BABARIAN</h3>
+        <img src="UPPER_BODY/BARBARIAN/barbarian-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; font-weight: bold;">BABARIAN Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 12px;">Unleash the barbarian within you with a total strength workout that loads muscles concentrically and eccentrically and works them throughout each set for best results. Make your punches slow and deliberate, swiveling on the foot on the side of the arm that's throwing the punch each time, so you can transfer your body weight behind it and make sure you lock the joint to activate shoulder muscles and triceps. Add EC. (You know you want to).  </p>
+      </div>
+  </div>
+</div>
+  </div>
+  
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="CEBERUS" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>CEBERUS</h3>
+        <img src="UPPER_BODY/CERBERUS/cerberus-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; font-weight: bold;">CEBERUS Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 12px;">Despite the dexterity with which we can use it our upper body strength, relative to the size of our body, is pretty weak. Cerberus tries to address this all in one go, which should be a hint for you on how you will feel the day after. Add EC for the extra bite (pun unintended) and you end up with a workout that delivers strength, can help with limb speed and will also test your VO2 Max performance, too. </p>
+      </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="DEMOLITION" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>DEMOLITION</h3>
+        <img src="UPPER_BODY/DEMOLITION/demolition-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; font-weight: bold;">DEMOLITION Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 12px;">Demolition is a level four strength workout that targets the upper body and core and helps you get pumped in no time at all. Do each exercise slowly (including the punches), pay attention to form and go through the full range of motion (which means the push ups are really deep) and you will feel the benefits from all this long before the workout itself is over.  </p>
+      </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="EXECUTIONER" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>EXECUTIONER</h3>
+        <img src="UPPER_BODY/EXECUTIONER/executioner-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">EXECUTIONER Workout</h3>
+        <p style="text-align: center; margin:20px; font-size: 12px;">Prodigious upper body strength and a powerful core are just what The Executioner is designed to deliver. This is a Level IV workout which gives you an idea of the load that builds up on the muscles as you flow from one exercise to the next and then go through one set after another. Add EC and this is probably a borderline Level V workout. You have been warned.</p>
+      </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+<div class="row"><!--row2-->
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="MARAUDER" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>MARAUDER</h3>
+        <img src="UPPER_BODY/MARAUDER/marauder-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">MARAUDER Workout</h3>
+        <p style="text-align: center; margin:20px; font-size: 11px;">Upper body strength takes time to develop and even more time to maintain. There are a lot of major and supporting muscle groups that need to work smoothly together to generate upper body power. This is where Marauder comes in. designed to work virtually every upper body muscle group Marauder provides a set of exercises that flow from high-load to high-coordination and back again. You will feel that your upper body's been worked and if you add EC you will also challenge your recovery time.  </p>
+      </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="MOUNTAIN" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>MOUNTAIN</h3>
+        <img src="UPPER_BODY/MOUNTAIN/mountain-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">MOUNTAIN Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 11px;"></p>The Mountain is an upper-body bodyweight training strength workout. That means that punches are delivered in full extension, slowly with the elbow joint locking out so that the muscle groups at the tricep and shoulder can be activated. Focus on form here and make sure the muscles move through the entire range of motion. Add EC for that extra feeling of Special. </p>
+      </div>
+  </div>
+</div>
+</div>
+  
+
+ <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="PENDRAGON" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>PENDRAGON</h3>
+        <img src="UPPER_BODY/PENDRAGON/pendragon-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">PENDRAGON Workout</h3>
+        <p style="text-align: center; margin:20px; font-size: 12px;">Pendragon is a boxing-based upper body strength workout that uses concentric and eccentric muscle movements to load upper body muscle groups and deliver results fast. While this is not designed to stress your VO2 Max it will get you in the sweatzone quickly. Make sure your form is perfect and you have perfected your punching, pivoting on the foot that's on the same side as the arm you're punching with so that your bodyweight shifts behind the punch.</p>
+      </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="POWER PUNCH" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>POWER PUNCH</h3>
+        <img src="UPPER_BODY/POWER PUNCH/power-punch-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">POWER PUNCH Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 12px;"></p>Train like a warrior, use your fists like a boxer with this upper body workout. Power Punch loads some very specific upper body muscle groups, all of which help push power into each thrown punch. This makes your arms effective weapons and adds a fresh dimension to your fitness routines. Use this workout often if you want a lean, mean upper body physique. Add EC for that extra load to your lungs that tests your VO2 Max fitness.</p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row"><!--row3-->
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="SHEILD" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>SHEILD</h3>
+        <img src="UPPER_BODY/SHEILD/shield-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">SHEILD workout</h3>
+        <p style="text-align: center; margin:20px; font-size: 12px;">Train your upper-body muscles to be battle-ready with The Shield workout. Designed especially to help you build upper-body strength, it targets the back, abs and core for that finished, warrior body feeling. This is a Level III workout that you can come to again and again every time you feel the need to reinforce your trunk and gain some strength. </p>
+      </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="SPACE COWBOY" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>SPACE COWBOY</h3>
+        <img src="UPPER_BODY/SPACE COWBOY/space-cowboy-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">SPACE COWBOY Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 12px;">In space your body had better be under your command. This means that when it comes to upper body strength you really ought to be able to feel that you have the ability to do pretty much what you want with it. Space Cowboy is an upper body strength workout that works all the major upper body muscle groups in a way that aligns their movements and helps increase the overall level of power your strength can generate. Add EC for that extra challenge and you are done!  </p>
+      </div>
+  </div>
+</div>
+</div>
+  
+
+ 
+</div>
+
+<br>
+
+<div class="foot">
+  <button type="submit" name="selectstrength" onclick='location.replace("selectstrength.html")'>NEXT</button>
+</div>
+
+</form>
+
+</body>
+</html>

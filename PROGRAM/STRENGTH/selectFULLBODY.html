@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 340px; /* Should be removed. Only for demonstration */
+    margin-bottom:40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("BG.png");
+  background-size: 1300px 1300px;
+}
+
+.flip-box-inner {
+  position: relative;
+  margin-left: 10px; 
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-inner:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 280px;
+  height: 340px;
+  backface-visibility: hidden;
+}
+
+.flip-box-back{
+
+  background-color:#4834d4;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  line-height: 20px;
+}
+.foot button{
+  background-color:#eb4d4b;
+  color:white;
+  margin-left: 600px; 
+  padding:12px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+}
+
+.fot button:hover {
+    opacity: 0.8;
+}
+
+</style>
+</head>
+<body>
+
+  <link href="../../bar/cssbar.css" rel="stylesheet" type="text/css">
+  
+    <div id="navbar">
+        <a href="home.html" id="logo">FITERZISE</a>
+    <div id="navbar-center">
+        <a href="program.html" class="active">PROGRAMS</a>
+        <a href="create.html">CREATE</a>
+        <a href="about.html">ABOUT US</a>
+    <div id="navbar-right">
+    </div>
+    </div>
+    </div>
+
+
+<h1 style="margin-top: 80px;  text-align: center; font-weight: bold; font-size: 80px;">Full Body Program</h1>
+<p style="font-size: 20px; text-align: center">Select 1 Full Body Program</p>
+
+
+<form>
+<div class="row"> <!--row1-->
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="BORN TO BE WILD" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>BORN TO BE WILD</h3>
+      <img src="FULL_BODY/BORN TO BE WILD/born-to-be-wild-workout.png".png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; font-weight: bold;">BORN TO BE WILD Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Born to be Wild is a difficulty Level IV workout not so much for the physical load of its individual exercises which is substantial as for their complexity. Perform side kicks using proper form and slowing them down to engage all the muscle groups involved. Perform punches using full body rotation for power and when it comes to squat hold punches make sure you maintain the squat throughout the count. </p>
+    </div>
+  </div>
+</div>
+  </div>
+  
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="DEATHSQUAD" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>DEATHSQUAD</h3>
+      <img src="FULL_BODY/DEATHSQUAD/deathsquad-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">DEATHSQUAD Workout</h3>
+      <p style="text-align: center; margin:30px; font-size: 12px;">Deathsquad is a full body, strength workout that begins to exert its influence on the body's muscles shortly after you get through the very first set. Although it's just level III in difficulty, it doesn't take long before fatigue kicks in and then you're working through that figurative wall the other side of which lies the physical strength you crave. Add EC and the challenge really begins to spike. </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="EPIC UPGRADE" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>EPIC UPGRADE</h3>
+      <img src="FULL_BODY/EPIC UPGRADE/epic-upgrade-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; font-weight: bold;">EPIC UPGRADE Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 12px;">Ultimate control comes from having a body that feels lighter than it is. Since we can't leave the planet's gravity well the next best way to achieve of this is through The Epic Upgrade workout which hyperloads the muscles and delivers a workout that will redefine the way you feel afterwards. </p>
+      </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="HEADKNOCKER" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h3>HEADKNOCKER</h3>
+      <img src="FULL_BODY/HEADKNOCKER/headknocker-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">HEADKNOCKER Workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Headknocker is a workout that uses a variety of exercises and some combat moves to turn the body into an instrument that recruits different muscle groups to perform each exercise. The result is a total body workout that works quite large muscle groups pushing both aerobic endurance and cardiovascular fitness. Add EC and you also have a powerful core challenger that completes the benefits you get from this workout.</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+<div class="row"><!--row2-->
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="MONSTER IS LOOSE" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>MONSTER IS LOOSE</h3>
+        <img src="FULL_BODY/MONSTER IS LOOSE/monster-is-loose-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">MONSTER IS LOOSE Workout</h3>
+        <p style="text-align: center; margin:20px; font-size: 11px;">Let your inner monster come out and play with The Monster Is Loose workout. This is a full-body, VO2 Max intensive, strength and stamina workout that helps you develop better body control and great core strength. </p>
+      </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="POWERBUILT" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>POWERBUILT</h3>
+        <img src="FULL_BODY/POWERBUILT/powerbuilt-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">POWERBUILT Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 11px;">Powerbuilt may not look difficult but as a difficulty Level IV workout it is one that will let you know immediately that you've started to build up a load. Many muscle groups are recruited for each exercise making this a go-to choice for building up muscle strength. Pay attention to form and stay focused throughout. Your body will know the difference the day after.  </p>
+      </div>
+  </div>
+</div>
+</div>
+  
+
+ <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="RAVENGER" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>RAVENGER</h3>
+        <img src="FULL_BODY/RAVENGER/ravager-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">RAVENGER Workout</h3>
+        <p style="text-align: center; margin:20px; font-size: 12px;">The Ravager is a workout that keeps on giving. Don't be fooled by it's simple structure and low rep count - it will make your muscles sing. Keep an even pace through the circuit and keep your head off the floor in the final ab work row for the best results.</p>
+      </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="RAW GRIT" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>RAW GRIT</h3>
+        <img src="FULL_BODY/RAW GRIT/raw-grit-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">RAW GRIT Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 12px;">Raw Grit will make you sweat, but it will not get you out of breath. This is a strength-building workout. Focus on technique. Make sure your form is as perfect as you can make it each time and maintain quality of execution throughout the workout. Add EC, it will test you further. </p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row"><!--row3-->
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="SECRET WEAPON" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>SECRET WEAPON</h3>
+      <img src="FULL_BODY/SECRET WEAPON/secret-weapon-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+    </div>
+    <div class="flip-box-back">
+      <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">SECRET WEAPON workout</h3>
+      <p style="text-align: center; margin:20px; font-size: 12px;">Secret Weapon is a workout designed to let you move your body in a very precise, controlled fashion. This means training it to better manage its own weight and fight off gravity. What makes you capable is the same thing that makes you dangerous: great muscle control. It all starts here. </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="flip-box">
+      <input type="radio" value="WAR GAMES" name="choose" style="margin-left :140px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h3>WAR GAMES</h3>
+        <img src="FULL_BODY/WAR GAMES/war-games-workout.png" style="width:280px; height:280px; border: double; border-color:#eb4d4b; border-width: 10px;">
+      </div>
+      <div class="flip-box-back">
+        <h3 style="text-align: center; margin:30px; margin-bottom: 20px; font-weight: bold;">WAR GAMES Workout</h3>
+        <p style="text-align: center; margin:30px; font-size: 12px;">Occasionally you need a workout that will not make you huff and puff but will, nonetheless activate all the major muscle groups, strengthen your abs and core and help you become stronger and fitter. This is where the War Games workout steps in and answers the call. You know what you have to do now. </p>
+      </div>
+  </div>
+</div>
+</div>
+  
+
+ 
+</div>
+
+<br>
+
+<div class="foot">
+  <button type="submit" name="selectstrength" onclick='location.replace("selectstrength.html")'>NEXT</button>
+</div>
+
+</form>
+
+</body>
+</html>
