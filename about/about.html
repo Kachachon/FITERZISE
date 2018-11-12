@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<link href="cssbar.css" rel="stylesheet" type="text/css">
+
+	<div id="navbar">
+  	<a href="home.html" id="logo">FITERZISE</a>
+    <div id="navbar-center">
+        <a href="program.html" class="active">PROGRAMS</a>
+        <a href="create.html">CREATE</a>
+        <a href="about.html">ABOUT US</a>
+    <div id="navbar-right">
+    	<button type="submit" name="signup" onclick='location.replace("registeration page.html")'>SIGN UP</button>
+
+    	<button onclick="document.getElementById('Login').style.display='block'" class="login">LOG IN</button>
+	</div>
+	</div>
+	</div>
+
+<div class="about">
+  <h1>About US</h1>
+  <p>FITERZISE is website that we’ve created to help user who loves to do an exercise or
+desire to do an exercise but don’t know where to start, so our website can help by providing
+easy and various programs that user can do at home, by every programs in our website are
+bodyweight which is exercises that do not require weights or machines as the individual
+own weight provides resistance against gravity. Since there's no weights or machines needed,
+these moves could be done anywhere. So it would be easy for user to start an exercise more
+comfortable without going to the gym.</p>
+</div>
+
+  <!--PopUp-->
+  <div id="Login" class="modal">
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+        <p> LOG IN </p>
+      <span onclick="document.getElementById('Login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <br><br>
+
+      <label for="pasw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit" class="login">Login</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('Login');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+	
+
+</body>
+</html>

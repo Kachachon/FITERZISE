@@ -27,16 +27,17 @@
         ?>
     </div>
     <div>
-        <?php
-            $br = "<br>";
-            if(isset($_SESSION['u_ID']))
-            {
+
+         <?php
+              if(isset($_SESSION['u_ID']))
+              {
                 echo '<button type="submit" name="create" id="btcreate">WORK OUT!</button>';
-            }
-            else{
-                echo '<button type="submit" name="create" id="btcreate">CREATE</button>';
-            }
-        ?>
+              }
+              else{
+                ?>
+              <button onclick='location.replace("create.php")' type="submit" name="create" id="btcreate">CREATE</button>
+                <?php   }
+            ?>
 <?php  
   include_once 'PopUpLogIn.php';
 ?>

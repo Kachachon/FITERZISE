@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link href="Admin.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="navbar">
+    <a href="home.html" id="logo">FITERZISE</a>
+    <div id="navbar-center">
+        <a href="program.html" class="active">PROGRAMS</a>
+        <a href="create.html">CREATE</a>
+        <a href="about.html">ABOUT US</a>
+    <div id="navbar-right">
+      <button type="submit" name="signup" onclick='location.replace("registeration page.html")'>SIGN UP</button>
+
+      <button onclick="document.getElementById('Login').style.display='block'" class="login">LOG IN</button>
+  </div>
+  </div>
+  </div>
+
+<div class="tab">
+  <h1 style="text-align: center; font-style: bold; font-size: 40px; color: white; margin-bottom: 30px; margin-top: 40px;">ADMIN</h1>
+  <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen"><i class="fa fa-home"></i>HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'view')"><i class="fa fa-fw fa-search"></i>VIEW SITE</button>
+</div>
+
+<div id="home" class="tabcontent">
+  <h2 style=" font-style: bold; margin-top: 20px; margin-left: 20px;">USER INFORMATION</h2>
+<table style=" font-style: bold; margin-left: 20px;">
+  <tr>
+    <th>USER ID</th>
+    <th>FIRSTNAME</th>
+    <th>LASTNAME</th>
+    <th>E-MAIL</th>
+    <th>WEIGHT</th>
+    <th>HEIGHT</th>
+    <th>AGE</th>
+    <th>SEX</th>
+    <th>VIEW</th>
+  </tr>
+
+</div>
+
+<div id="view" class="tabcontent">
+
+</div>
+
+
+</table>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

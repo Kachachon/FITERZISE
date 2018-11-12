@@ -19,7 +19,7 @@ if (isset($_POST['SubmitLogin']))
 			$resultCheck= mysqli_num_rows($result);
 			if ($resultCheck < 1) 
 			{
-				header("Location: index_.php?login=error_1");
+				header("Location: create.php?login=error_1");
 				exit();
 			}
 			else
@@ -29,13 +29,20 @@ if (isset($_POST['SubmitLogin']))
 				//dehash
 					if (password_verify($inputPass,$row['password']))
 					{
-					header("Location: index_.php?login=$passcheck");
+					header("Location: PopUpLogIn.php?login=$passcheck");
 					}
 					if (!password_verify($inputPass,$row['password']))
 					{
 						//login
 						$_SESSION['u_ID']=$row['userID'];
 						$_SESSION['u_username']=$row['username'];
+						$_SESSION['u_firstname']=$row['firstname'];
+						$_SESSION['u_lastname']=$row['lastname'];
+						$_SESSION['u_sex']=$row['sex'];
+						$_SESSION['u_weight']=$row['weight'];
+						$_SESSION['u_height']=$row['height'];
+						$_SESSION['u_email']=$row['email'];
+
 						header("Location: index_.php?login=success");
 						exit();
 					}

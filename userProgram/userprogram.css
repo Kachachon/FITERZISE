@@ -1,0 +1,192 @@
+
+ul {list-style-type: none;}
+
+
+.month {
+    padding: 70px 25px;
+    width: 50%;
+    background: #eb4d4b;
+    text-align: center;
+    margin-left: 320px;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    margin-left: 320px;
+    padding: 10px 0;
+    background-color: #ddd;
+    width: 50%;
+
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+    width: 50%;
+     margin-left: 320px;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background:  #4834d4;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width:280px;
+    padding: 10px;
+    height: 340px; /* Should be removed. Only for demonstration */
+    margin-bottom:10px;
+    margin-left: 260px;
+}
+.column2 {
+    float: left;
+    width:280px;
+    padding: 10px;
+    height: 340px; /* Should be removed. Only for demonstration */
+    margin-bottom:10px;
+    margin-left: 90px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("BGuserprogram.jpg");
+  background-size: 1400px 1400px;
+}
+
+.flip-box-inner {
+  position: relative;
+  margin-left: 10px; 
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-box-inner:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 280px;
+  height: 340px;
+  backface-visibility: hidden;
+}
+
+.flip-box-back{
+
+  background-color:#4834d4;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  line-height: 20px;
+}
+
+.p1{
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 40px;
+    font-style: bold; 
+}
+
+.p2{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 40px;
+    font-style: bold; 
+    text-align: center;
+}
+
+#timer {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+
+}
+
+.rate{
+    text-align: center;
+    margin-left: 530px;
+    display: inline;
+
+}
+.feel{
+    text-align: center;
+     margin-top: 150px;
+  font-size: 40px;
+}

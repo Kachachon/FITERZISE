@@ -9,8 +9,6 @@ $conn = mysqli_connect($dbServername,$dbUsername,$dbPassword,
 if($conn-> connect_errno){
 	echo $mysqli-> connect_errno.":".$mysqli-> connect_error;
 }
-else
-	echo "Connection sucessfully!";
 ?>
 
 

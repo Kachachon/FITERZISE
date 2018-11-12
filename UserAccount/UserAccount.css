@@ -6,21 +6,52 @@
     font-family:DetailFont;
     src: url(../FONT/couture.otf);
 }
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+    margin-top: 150px;
+}
 
-.card {
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.card1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: auto;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    font-family: LogoFont;
+    float: left;
+}
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 600px;
     text-align: center;
     font-family: LogoFont;
 }
-.detail{
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    font-family: LogoFont;
+}
+.Userdetail{
     font-family:DetailFont;
-    color: black;
-    font-size: 18px;
+    color: black; 
 }
 
-button {
+.ButUser{
     border: none;
     outline: 0;
     display: inline-block;
@@ -33,13 +64,35 @@ button {
     font-size: 15px;
     color: #eb4d4b
 }
-
-a {
-    text-decoration: none;
-    font-size: 30px;
-    color: black;
+.ButUser{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    color: #eb4d4b
 }
-
-button:hover, a:hover {
-    opacity: 0.7;
+.ButUser:hover{
+    color: #eb4d4b;
+}
+.DoEx{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 30px;
+    color: #eb4d4b
+}
+.DoEx:hover{
+    color: #eb4d4b;
 }
